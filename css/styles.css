@@ -39,6 +39,11 @@ a.logo-link,
   text-decoration: none;
 }
 
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--links-color);
+}
+
 .logo {
   color: var(--links-color);
 }
@@ -50,23 +55,18 @@ a.logo-link,
 
 .nav .nav-link.curent,
 .nav .nav-link:hover,
-.nav .nav-link:focus,
-.adress-link:hover,
-.adress-link:focus,
-.logo-link:hover,
-.logo-link:focus,
-.footer-link:hover,
-.footer-link:focus,
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-logo:hover,
-.footer-logo:focus {
+.nav .nav-link:focus {
   color: var(--links-color);
 }
 
 .adress-link {
   color: var(--secondary-text-color);
   text-decoration: none;
+}
+
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--links-color);
 }
 
 .hero {
@@ -87,10 +87,7 @@ a.logo-link,
 .button {
   background-color: var(--links-color);
   color: var(--background-color);
-}
-
-.button,
-.title-features {
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -101,6 +98,13 @@ a.logo-link,
 .button:hover,
 .button:active {
   background-color: var(--buttonactiv-bgcolor);
+}
+
+.title-features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .title-work,
@@ -134,7 +138,7 @@ a.logo-link,
 }
 
 .nav-button {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   background-color: var(--section-bg-color);
   color: var(--primary-text-color);
   font-weight: 500;
@@ -168,9 +172,14 @@ a.logo-link,
 }
 
 .footer,
-.text-features .footer-adress {
+.text-features,
+.footer-adress {
   font-size: 14px;
   line-height: 1.71;
+}
+
+.address-list {
+  font-style: normal;
 }
 
 .footer-adress,
@@ -181,4 +190,13 @@ a.logo-link,
 .footer-link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-adress:hover,
+.footer-adress:focus,
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--links-color);
 }
